@@ -1,0 +1,127 @@
+<!-- 
+	1. Home page
+	2. Charts page
+	3. About us and contact info
+	4. 
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+	<title>PiNation</title>
+	<!-- External APIs -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+	<script src = "https://code.highcharts.com/highcharts.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+
+	<!-- User-defined files -->
+
+	<link rel="stylesheet" href="css/main.css">
+
+ </head>
+ <body>
+
+	<!-- <a href="chart.html">Go to test out charts.html</a> -->
+
+<div class="container-fluid text-center">
+	
+
+	<div class="page-header text-center">
+		<h2>PiNation: Agri Monitoring solutions</h2>
+		<p> Real time sensor monitoring </p>
+		<img src="img/green.jpg" alt="green" height="100%" width="100%"> 
+	</div> <hr>
+
+	<!-- Uploading an image of the crop -->
+
+	
+
+	<a href="test.html">chart</a>
+	<div class="row">
+
+		<div class="col-md-4 container-fluid" id = "pi-list">
+			<h4>List of connected pi units</h4> <hr>
+			<div class="row" id = "pi-display">
+				<table class="table text-center">
+					<thead>
+						<tr>
+							<th>Pi Name</th>
+							<th>Plant</th>
+							<th>Location</th>
+						</tr>
+					</thead>
+
+					<tbody id = "table-row">
+						<tr data-snsr-name = "snsr0">
+							<td>Pi 1</td>
+							<td>Block A</td>
+							<td>Tomatoes</td>
+						</tr>
+						<tr data-snsr-name = "snsr1">
+							<td>Pi 2</td>
+							<td>Block B</td>
+							<td>Lettuce</td>
+						</tr>
+						<tr data-snsr-name = "snsr2">
+							<td>Pi 3</td>
+							<td>Block C</td>
+							<td>Chive</td>
+						</tr>
+						<tr data-snsr-name = "snsr3">
+							<td>Pi 4</td>
+							<td>Block D</td>
+							<td>Pepper</td>
+						</tr>
+						<tr data-snsr-name = "snsr4">
+							<td>Pi 5</td>
+							<td>Block E</td>
+							<td>Parsley</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+<!-- frameborder="0" allow="autoplay; encrypted-media" allowfullscreen -->
+		<div class="col-md-8" id = "video-stream">
+			<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rsntWSzBfek?autoplay=1?start=1015"></iframe> -->
+		</div>
+
+		
+
+	</div> <hr>
+
+	<button id="test-model" disabled>Click me to test out model</button>
+
+	<div class="row">
+		<div class="col-md-6" id="temp-chart"></div>
+		<div class="col-md-6" id="hum-chart"></div>
+	</div>
+
+
+	<footer class="footer"> 
+		<span> Project: PiNation</span> <br>
+		<span> Competition: Hack Against Hunger 2018 Hackathon </span> <br>
+		<span> Developers: Michael Ali, Qarun Bissoondial, Gabriela Sewdhan =D </span> <br>
+	</footer>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</div>
+ 	
+	<script src = "js/chart-util.js"></script>
+ 	<script src = "js/chart.js"></script>
+
+ 	<script src = "js/main.js"></script>
+ </body>
+ </html>

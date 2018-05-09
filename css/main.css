@@ -1,0 +1,57 @@
+html {
+  position: relative;
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer { /*transluscent bar at bottom of page*/
+  margin-top: 10%;  
+  position: absolute;
+  bottom: 0pt; left: 0pt;
+  width: 100%;
+  padding: 0.2rem;
+  background: rgba(254, 254, 254, 0.5);
+  text-align: center;
+  box-shadow: 0px -6px 20px #cccccc;
+}
+
+/* #chart-display {
+  overflow-y:  scroll;
+
+  height: 1000px;
+}
+ */
+.chart {
+  position: relative;
+  width: 80%;
+  height: 400px;
+}
+
+tbody > tr {
+  transition: all 0.3s
+}
+
+tbody > tr:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* #pi-display { position: fixed; } */
+#pi-display > table { width: 100%; }
+
+
+/* .dropzone {
+  width:  300px;
+  height: 300px;
+  border: 3px solid dashed;
+  color: grey;
+  text-align: center;
+}
+
+.dropzone.dragover {
+  
+} */
